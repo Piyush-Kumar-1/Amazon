@@ -1,0 +1,21 @@
+.checkoutProduct {
+  display: flex;
+  padding: 10px;
+}
+
+.checkoutProduct > img {
+  margin-right: 10px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.checkoutProduct__details {
+  font-weight: 600;
+}
+
+.checkoutProduct__details > button {
+  margin-top: 20px;
+  background-color: orange;
+  width: 90px;
+  height: 20px;
+}
