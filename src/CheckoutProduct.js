@@ -18,7 +18,7 @@ export default function CheckoutProduct({id,title,img,price,rating}) {
             <img src={img} alt=''/>
             <div className='checkoutProduct__details'>
                 <p>{title}</p>
-                <p>$ {price}</p>
+                <p>₹ {price}</p>
                 <p>{'🌟'.repeat(rating)}</p>
                 <button onClick={remove}>Remove</button>
             </div>

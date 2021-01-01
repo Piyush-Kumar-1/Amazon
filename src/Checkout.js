@@ -46,7 +46,7 @@ export default function Checkout() {
                     value={getBasketTotal(basket)} // Part of the homework
                     displayType={"text"}
                     thousandSeparator={true}
-                    prefix={"$"}
+                    prefix={"₹"}
                 />
 
                 <button onClick={e => history.push('/payment')}>Proceed to Checkout</button>
