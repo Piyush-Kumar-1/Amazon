@@ -17,14 +17,18 @@ export default function Login() {
              }).catch(err=>alert(err.message))
     }
 
-    const register =e=>{
-        e.preventDefault()
-        auth
-            .createUserWithEmailAndPassword(email,password)
-            .then((auth)=>{
-                history.push('/')
+    // const register =e=>{
+    //     e.preventDefault()
+    //     auth
+    //         .createUserWithEmailAndPassword(email,password)
+    //         .then((auth)=>{
+    //             history.push('/')
               
-            }).catch(error=>alert(error.message))
+    //         }).catch(error=>alert(error.message))
+    // }
+
+    const register1=()=>{
+        history.push('/register')
     }
 
     return (
@@ -41,7 +45,7 @@ export default function Login() {
                     <input className='login__containerInput'  type='password' value={password} onChange={e=>setPassword(e.target.value)}/>
                     <button onClick={signIn} className='button'>Signin</button>
                 </form>
-                <button onClick={register} className='button'>Create Account</button>
+                <button onClick={register1} className='button'>Create Account</button>
             </div>
 
         </div>

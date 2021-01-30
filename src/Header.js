@@ -8,7 +8,7 @@ import {auth} from './firebase'
 
 export default function Header() {
 
-    const [{basket,user},dispatch]=useStateValue()
+    const [{basket,user,name},dispatch]=useStateValue()
 
     const handleAuth =()=>{
         if(user){
