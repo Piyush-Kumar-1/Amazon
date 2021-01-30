@@ -87,11 +87,13 @@ function App() {
   }, [user]);
 
   useEffect(() => {
-    const data = localStorage.getItem("basket");
-    const da = JSON.parse(data);
-    if (da) {
-      {
-        da.map((item) => addToBasket1(item));
+    if (!user) {
+      const data = localStorage.getItem("basket");
+      const da = JSON.parse(data);
+      if (da) {
+        {
+          da.map((item) => addToBasket1(item));
+        }
       }
     }
   }, []);
